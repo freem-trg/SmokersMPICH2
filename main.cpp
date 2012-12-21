@@ -2,6 +2,7 @@
 #include <string>
 #include <stdlib.h>
 #include "mpi.h"
+#include <unistd.h>
 
 using namespace std;
 
@@ -41,6 +42,7 @@ void smoker(int num){
     }
     cout << endl;
     table[num] = 1;
+    sleep(1);
 }
 
 
